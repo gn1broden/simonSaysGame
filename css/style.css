@@ -1,0 +1,60 @@
+body{
+
+}
+
+section{
+    position: relative;
+    background: rgb(236, 236, 236);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section .btn, section .btn.light{
+    display: inline-block;
+    width: 42%;
+    margin-right: 2%;
+    border: 1px solid rgb(134, 134, 134);
+    height: 180px;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    padding: 20px;
+}
+section .btn:nth-child(even){
+    margin: 0;
+}
+
+.one{
+    background: rgba(255, 255, 0, 0.400);
+}
+.two{
+    background: rgba(0, 0, 255, 0.400)
+}
+.tree{
+    background: rgba(255, 0, 0, 0.400)
+}
+.four{
+    background: rgba(0, 128, 0, 0.400)
+}
+
+.one.light{background: rgba(255, 255, 0);} 
+.two.light{background: rgba(0, 0, 255);}
+.tree.light{background: rgba(255, 0, 0);}
+.four.light{background: rgba(0, 128, 0);}
+
+.message {
+    position: absolute;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 40px 0px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s;
+}
+
+.message.hidden{
+    left: -169px;
+}
